@@ -1,0 +1,77 @@
+.headshot-container {
+    position: relative;
+    width: 100%;
+}
+
+.member-headshots-tux,
+.member-headshots-emily,
+.member-headshots-elise,
+.member-headshots-nik {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay-tux,
+.overlay-elise,
+.overlay-nik,
+.overlay-emily {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.overlay-emily {
+    background-color: #455D7A;
+}
+
+.overlay-elise {
+    background-color: #F95959
+}
+
+.overlay-nik {
+    background-color: #455D7A
+}
+
+.overlay-tux {
+    background-color: #F95959;
+}
+
+.headshot-container:hover .overlay-tux {
+    bottom: 0;
+    height: 100%;
+}
+
+.headshot-container:hover .overlay-emily {
+    bottom: 0;
+    height: 100%;
+}
+
+.headshot-container:hover .overlay-elise {
+    bottom: 0;
+    height: 100%;
+}
+
+.headshot-container:hover .overlay-nik {
+    bottom: 0;
+    height: 100%;
+}
+
+
+
+.text {
+    white-space: nowrap;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}

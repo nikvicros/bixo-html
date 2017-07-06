@@ -1,0 +1,590 @@
+/* Global Styles */
+
+body {
+    background-color: #fff;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Josefin', sans-serif;
+}
+
+p,
+ul,
+li,
+a {
+    font-family: 'Nunito', sans-serif;
+}
+
+.bixo-heading {
+    font-weight: 700;
+    color: #F95959;
+}
+
+
+/* iPhone 6 landscape */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+    .bixo-heading {
+        font-size: 3.0rem;
+    }
+    .who-we-are-message {
+        font-size: 1.5rem;
+    }
+    .learn-more,
+    .bixo-studios-text,
+    .bixo-fancy-text {
+        display: none;
+    }
+}
+
+
+/* iPhone 6 portrait */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+    .bixo-heading {
+        font-size: 3.0rem;
+    }
+    .who-we-are-message {
+        font-size: 1.5rem;
+    }
+    .learn-more,
+    .bixo-studios-text,
+    .bixo-fancy-text {
+        display: none;
+    }
+}
+
+
+/* iPhone 6 Plus landscape */
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 3) {
+    .bixo-heading {
+        font-size: 3.0rem;
+    }
+    .who-we-are-message {
+        font-size: 1.0rem;
+    }
+    .learn-more,
+    .bixo-studios-text,
+    .bixo-fancy-text {
+        display: none;
+    }
+}
+
+
+/* iPhone 6 Plus portrait */
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 3) {
+    .bixo-heading {
+        font-size: 3.0rem;
+    }
+    .who-we-are-message {
+        font-size: 1.0rem;
+    }
+    .learn-more,
+    .bixo-fancy-text {
+        display: none;
+    }
+}
+
+
+/* iPhone 6 and 6 Plus */
+
+@media only screen and (max-device-width: 640px),
+only screen and (max-device-width: 667px),
+only screen and (max-width: 480px) {}
+
+
+/* Apple Watch */
+
+@media (max-device-width: 42mm) and (min-device-width: 38mm) {}
+
+
+/* NAVIGATION */
+
+.bixo-logo {
+    height: 75px;
+    width: 75px;
+}
+
+.brand-logo {
+    padding-top: 20px;
+}
+
+.nav-wrapper {
+    height: 100px;
+}
+
+nav ul li:hover {
+    background-color: #F95959;
+}
+
+nav {
+    height: 100px;
+    line-height: 100px;
+    background-color: #455D7A;
+}
+
+nav .brand-logo {
+    font-size: 2.5rem;
+}
+
+nav ul li.active {
+    background-color: #F95959;
+}
+
+
+/* HERO SECTION */
+
+.bixo-hero-our-way {
+    background-color: #455D7A;
+    color: #fff;
+    height: 100vh;
+}
+
+.bixo-hero-message {
+    position: relative;
+}
+
+.text-animate:hover {
+    background-color: #F95959;
+}
+
+.learn-more {
+    position: relative;
+    top: 2.0rem;
+}
+
+
+/* BIXO Fancy Styling */
+
+.bixo-studios-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: #455D7A;
+}
+
+.bixo-studios-text {
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: .5em;
+    font-weight: 700;
+}
+
+.bixo-fancy-text {
+    display: inline-block;
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-perspective: 500;
+    perspective: 500;
+    -webkit-font-smoothing: antialiased;
+}
+
+.bixo-fancy-text::before,
+.bixo-fancy-text::after {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: -1px;
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all ease-out 0.3s;
+    content: attr(data-text);
+}
+
+.bixo-fancy-text::before {
+    z-index: 1;
+    color: rgba(0, 0, 0, 0.2);
+    -webkit-transform: scale(1.1, 1) skew(0deg, 20deg);
+    transform: scale(1.1, 1) skew(0deg, 20deg);
+}
+
+.bixo-fancy-text::after {
+    z-index: 2;
+    color: #455D7A;
+    text-shadow: -1px 0 1px #455D7A, 1px 0 1px rgba(0, 0, 0, 0.8);
+    -webkit-transform: rotateY(-40deg);
+    transform: rotateY(-40deg);
+}
+
+.bixo-fancy-text:hover::before {
+    -webkit-transform: scale(1.1, 1) skew(0deg, 5deg);
+    transform: scale(1.1, 1) skew(0deg, 5deg);
+}
+
+.bixo-fancy-text:hover::after {
+    -webkit-transform: rotateY(-10deg);
+    transform: rotateY(-10deg);
+}
+
+.bixo-fancy-text+span {
+    margin-left: 0.3em;
+}
+
+@media (min-width: 20em) {
+    .bixo-studios-text {
+        font-size: 2em;
+    }
+    .bixo-fancy-text::before,
+    .bixo-fancy-text::after {
+        display: block;
+    }
+}
+
+@media (min-width: 30em) {
+    .bixo-studios-text {
+        font-size: 3em;
+    }
+}
+
+@media (min-width: 40em) {
+    .bixo-studios-text {
+        font-size: 5em;
+    }
+}
+
+@media (min-width: 60em) {
+    .bixo-studios-text {
+        font-size: 8em;
+    }
+}
+
+
+/* WE ARE AWESOME */
+
+.c-t-a-contact {
+    background-color: #F95959;
+    height: 150px;
+}
+
+
+/* SVG ANIMATION */
+
+#BixoLab {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    top: 50px;
+}
+
+#InnerFlamePath {
+    fill: #d84315;
+    animation: 10s inner-flame-animate infinite;
+}
+
+#FizzOne {
+    stroke: #F95959;
+    stroke-dasharray: 30;
+    stroke-dashoffset: 30;
+    animation: 3s fizzle-one infinite;
+}
+
+#FizzTwo {
+    stroke: #F95959;
+    stroke-dasharray: 30;
+    stroke-dashoffset: 30;
+    animation: 3.5s fizzle-one infinite;
+}
+
+#FizzThree {
+    stroke: #F95959;
+    stroke-dasharray: 30;
+    stroke-dashoffset: 30;
+    animation: 2s fizzle-one infinite;
+}
+
+@keyframes fizzle-one {
+    0% {
+        stroke-dashoffset: 75;
+    }
+    100% {
+        stroke-dashoffset: 2;
+    }
+}
+
+@keyframes inner-flame-animate {
+    0% {
+        fill: #ff9800;
+    }
+    10% {
+        fill: #ff8a65;
+    }
+    15% {
+        fill: #ff3d00;
+    }
+    20% {
+        fill: #fff9c4;
+    }
+    25% {
+        fill: #fdd835;
+    }
+    30% {
+        fill: #ff6f00;
+    }
+    35% {
+        fill: #d84315;
+    }
+    45% {
+        fill: #ff9100;
+    }
+    50% {
+        fill: #ff9800;
+    }
+    55% {
+        fill: #ffab91;
+    }
+    75% {
+        fill: #ff6d00;
+    }
+    100% {
+        fill: #F95959;
+    }
+}
+
+
+/* iPhone 6 landscape */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+    #BixoLab {
+        width: 400px;
+        height: 200px;
+        top: 0px;
+    }
+}
+
+
+/* iPhone 6 portrait */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+    #BixoLab {
+        width: 400px;
+        height: 200px;
+        top: 0px;
+    }
+}
+
+
+/* iPhone 6 Plus landscape */
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 3) {
+    #BixoLab {
+        width: 400px;
+        height: 200px;
+    }
+}
+
+
+/* iPhone 6 Plus portrait */
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 3) {
+    #BixoLab {
+        width: 400px;
+        height: 200px;
+    }
+}
+
+
+/* WHAT WE DO */
+
+.bixo-what-message {
+    font-weight: 700;
+    color: #F95959;
+}
+
+.service-box {
+    background-color: #455D7A;
+    color: #fff;
+}
+
+.card-title {
+    font-size: 35px;
+    font-weight: 400;
+    color: #455D7A;
+}
+
+.card-content p {
+    color: #455D7A;
+}
+
+.card {
+    border-radius: 3px;
+}
+
+
+/* Rocket SVG */
+
+#BixoLaunch,
+#bixoBranding,
+#designDev {
+    width: 275px;
+    height: auto;
+}
+
+#BoosterOne line {
+    fill: none;
+    stroke: #F95959;
+    stroke-dasharray: 10;
+    stroke-dashoffset: 10;
+    animation: 1.5s booster-animate infinite;
+}
+
+#BoosterTwo line {
+    fill: none;
+    stroke: #F95959;
+    stroke-dasharray: 10;
+    stroke-dashoffset: 10;
+    animation: 2.5s booster-animate infinite;
+}
+
+#BoosterThree line {
+    fill: none;
+    stroke: #F95959;
+    stroke-dasharray: 10;
+    stroke-dashoffset: 10;
+    animation: 2.0s booster-animate infinite;
+}
+
+@keyframes booster-animate {
+    0% {
+        stroke-dashoffset: 10;
+    }
+    25% {
+        stroke-dashoffset: 7.5;
+    }
+    50% {
+        stroke-dashoffset: 5;
+    }
+    75% {
+        stroke-dashoffset: 2.5;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+
+/* Design + Dev SVG */
+
+#EyePiece {
+    fill: #fff;
+    animation: 5s eye-animation infinite;
+}
+
+@keyframes eye-animation {
+    0% {
+        fill: #fff;
+    }
+    100% {
+        fill: #F95959;
+    }
+}
+
+
+/* Branding */
+
+#EyeOne {
+    fill: #fff;
+    animation: 1s eye-animate infinite;
+}
+
+#EyeTwo {
+    fill: #fff;
+    animation: 3s eye-animate infinite;
+}
+
+@keyframes eye-animate {
+    0% {
+        fill: #fff;
+    }
+    100% {
+        fill: #00c853;
+    }
+}
+
+
+/* iPhone 6 landscape */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+    #BixoLaunch {
+        width: 200px;
+        height: auto;
+        top: 0px;
+    }
+}
+
+
+/* iPhone 6 portrait */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+    #BixoLaunch,
+    #designDev,
+    #bixoBranding {
+        width: 200px;
+        height: auto;
+        top: 0px;
+    }
+}
+
+
+/* iPhone 6 Plus landscape */
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 3) {
+    #BixoLaunch,
+    #designDev,
+    #bixoBranding {
+        width: 200px;
+        height: auto;
+    }
+}
+
+
+/* iPhone 6 Plus portrait */
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 3) {
+    #BixoLaunch,
+    #designDev,
+    #bixoBrandingh {
+        width: 200px;
+        height: auto;
+    }
+}
+
+
+/* CTA */
+
+.c-t-a {
+    background-color: #F95959;
+    height: 50px;
+}
+
+.c-t-a-hire {
+    height: 50px;
+    background-color: #F95959;
+}
+
+
+/* FOOTER */
+
+.footer-copyright,
+.page-footer {
+    background-color: #455D7A;
+}
+
+.services-desc {
+    color: #455D7A;
+}
