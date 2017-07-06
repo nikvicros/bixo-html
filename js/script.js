@@ -6,7 +6,7 @@ function initMap() {
     var map = new google
         .maps
         .Map(document.getElementById('bixo-map'), {
-            zoom: 16,
+            zoom: 13,
             center: satx,
             styles: [
             {elementType: 'geometry', stylers: [{color: '#455D7A'}]},
@@ -91,5 +91,5 @@ function initMap() {
         });
     var marker = new google
         .maps
-        .Marker({position: satx, map: map});
+        
 }
