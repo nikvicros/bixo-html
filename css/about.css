@@ -3,17 +3,17 @@
 .fa {
     color: #fff;
 }
-.dropcap {
-  color: #F95959;
-  float: left;
-  font-size: 75px;
-  line-height: 60px;
-  padding-top: 4px;
-  padding-right: 8px;
-  padding-left: 0px;
-  font-weight: 700;
-}
 
+.dropcap {
+    color: #F95959;
+    float: left;
+    font-size: 75px;
+    line-height: 60px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 0px;
+    font-weight: 700;
+}
 
 .spacer-col {
     height: 100px;
@@ -31,7 +31,6 @@ hr,
     color: #607d8b;
 }
 
-
 .about-heading,
 .about-our-team-heading,
 .mission-heading {
@@ -41,22 +40,27 @@ hr,
 
 .about-heading {
     font-size: 6.0em;
-    stroke: #fff;
 }
 
+
 /* Mission Statement Styling */
+
 .bixo-mission-statement {
     height: 700px;
 }
 
+
 /* About Message Styling */
+
 .about-top-message {
     font-size: 16px;
     height: 600px;
     text-align: justify;
 }
 
+
 /* Google Map Styling */
+
 .bixo-location {
     width: 500px;
     height: 500px;
@@ -64,6 +68,7 @@ hr,
     -webkit-border-radius: 50%;
     border-radius: 50%;
 }
+
 
 /* Gradient Words */
 
@@ -81,6 +86,7 @@ hr,
     background-image: -o-linear-gradient(left, #F95959, #455D7A);
     background-image: linear-gradient(to right, #F95959, #455D7A);
 }
+
 
 /* Profile Styling */
 
@@ -148,8 +154,6 @@ hr,
     height: 100%;
 }
 
-
-
 .text {
     white-space: nowrap;
     color: white;
@@ -164,9 +168,93 @@ hr,
 
 
 /* Experimental */
-.details-container {
-    display: inline-block;
-    border-top: dashed 1px;
-    border-bottom: dashed 1px;
-    border-right: dashed 1px;
+
+footer {
+    height: 200px;
+}
+
+.footer-cta {
+    border: solid 1px #607d8b;
+    color: #fff;
+    background-color: #F95959;
+    font-size: 2.0em;
+    font-weight: 700;
+    width: 205px;
+    height: auto;
+    border-radius: 2px;
+}
+
+.footer-left {
+    height: 100px;
+    color: #fff;
+}
+
+.footer-center {
+    height: 100px;
+}
+
+.footer-right {
+    height: 100px;
+}
+
+.footer-right ul {
+    list-style: none;
+}
+
+.footer-right li {
+    display: inline;
+}
+
+
+/* CTA Button Footer */
+
+.cta-btn {
+  display: block;
+  width: 180px;
+  height: 50px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  color: #fff;
+  background-color: #F95959;
+  border-radius: 2px;
+  box-shadow: 0px 3px 0px #e53935;
+  text-align: center;
+  line-height: 50px;
+  text-decoration: none;
+  margin: 26px auto 0;
+  font-weight: bold;
+  -webkit-animation: btnWiggle 5s infinite;
+  -moz-animation: btnWiggle 5s infinite;
+  -o-animation: btnWiggle 5s infinite;
+  animation: btnWiggle 5s infinite;
+}
+
+.subtext {
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+  letter-spacing: .05em;
+  text-align: center;
+}
+
+/* animation */
+@-webkit-keyframes btnWiggle {
+	0% {-webkit-transform: rotate(0deg);}
+	2% {-webkit-transform: rotate(-1deg);}
+	3.5% {-webkit-transform: rotate(1deg);}
+	5% {-webkit-transform: rotate(0deg);}
+	100% {-webkit-transform: rotate(0deg);}
+}
+@-o-keyframes btnWiggle {
+	0% {-webkit-transform: rotate(0deg);}
+	2% {-webkit-transform: rotate(-1deg);}
+	3.5% {-webkit-transform: rotate(1deg);}
+	5% {-webkit-transform: rotate(0deg);}
+	100% {-webkit-transform: rotate(0deg);}
+}
+@keyframes btnWiggle {
+	0% {-webkit-transform: rotate(0deg);}
+	2% {-webkit-transform: rotate(-1deg);}
+	3.5% {-webkit-transform: rotate(1deg);}
+	5% {-webkit-transform: rotate(0deg);}
+	100% {-webkit-transform: rotate(0deg);}
 }

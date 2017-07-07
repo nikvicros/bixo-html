@@ -21,18 +21,18 @@
 
 <body>
     <!--Nav Section-->
-    <nav class="top-navigation ">
+    <nav class="top-navigation z-depth-0">
         <div class="nav-wrapper container">
             <a href="#" class="brand-logo"><img class="bixo-logo" src="assets/bixo-logo.png"></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="index.html">Home</a></li>
                 <li class="active"><a href="about.html">About</a></li>
-                <li><a href="works.html">Works</a></li>
+                <li class="active"><a href="about.html">Contact</a></li>
             </ul>
         </div>
     </nav>
     <!--Hero Section -->
-    <section class="bixo-about-hero">
+    <section id="bixo-hero" class="bixo-about-hero">
         <div class="container">
             <div class="row">
                 <div class="about-spacer col s12 valign-wrapper">
@@ -192,27 +192,22 @@
     <footer class="page-footer hide-on-med-and-down">
         <div class="container">
             <div class="row">
-                <div class="col l4 s12">
-                    <h5 class="white-text">Quick Nav</h5>
-                    <ul>
-                        <li><a class="grey-text text-lighten-3" href="#!">Home</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">About</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Works</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Contact</a></li>
-                    </ul>
+                <div class="col s4 center footer-left">
+                    <!-- Calendly link widget begin -->
+                    <link href="https://calendly.com/assets/external/widget.css" rel="stylesheet">
+                    <script src="https://calendly.com/assets/external/widget.js" type="text/javascript"></script>
+                    <a class="cta-btn" href="" onclick="Calendly.showPopupWidget('https://calendly.com/bixo');return false;">Contact Us</a>
+                    <!-- Calendly link widget end -->
                 </div>
-
-                <div class="col l4 s12">
+                <div class="col s4 center footer-center">
 
                 </div>
-
-                <div class="col l4 s12">
-                    <h5 class="white-text">Around The Web</h5>
+                <div class="col s4 valign-wrapper center footer-right">
                     <ul>
-                        <li><a class="grey-text text-lighten-3" href="#!">Twitter</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Instagram</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Dribbble</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Behanced</a></li>
+                        <li><a href=""><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
+                        <li><a href=""><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+                        <li><a href=""><i class="fa fa-dribbble fa-2x" aria-hidden="true"></i></a></li>
+                        <li><a href=""><i class="fa fa-behance fa-2x" aria-hidden="true"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -221,7 +216,7 @@
             <div class="container">
                 © 2017 | Bixo Studios | <i class="fa fa-code" aria-hidden="true"></i> with <i class="fa fa-heart red-text"
                     aria-hidden="true"></i> in San Antonio, Texas
-                <a class="grey-text text-lighten-4 right" href="#!">Bixo.io</a>
+                <a class="grey-text text-lighten-4 right" href="#bixo-hero">Back to Top</a>
             </div>
         </div>
     </footer>
